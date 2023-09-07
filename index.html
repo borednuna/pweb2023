@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <title>Nuna | Resume</title>
+        <style>
+            body {
+                background-color: #ffffff;
+                position: relative;
+                left: 0;
+                margin: 0;
+            }
+
+            section {
+                position: relative;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 2rem;
+            }
+
+            h1 {
+                color: #141E46;
+                font-size: 5rem;
+                width: 100%;
+                margin-bottom: 0;
+                text-align: center;
+                font-weight: 700;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            h2 {
+                color: #141E46;
+                font-size: 1.5rem;
+                width: 100%;
+                text-align: center;
+                font-weight: 500;
+                font-family: 'Montserrat', sans-serif;
+                margin-bottom: 4rem;
+            }
+
+            h3 {
+                color: #BB2525;
+                font-size: 2rem;
+                width: fit-content;
+                text-align: center;
+                font-weight: 600;
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            h4 {
+                color: #ffffff;
+                font-size: 1.2rem;
+                width: fit-content;
+                text-align: center;
+                font-weight: 600;
+                font-family: 'Montserrat', sans-serif;
+            }
+            
+            p {
+                font-size: 1rem;
+                width: 100%;
+                text-align: center;
+                font-weight: 400;
+                font-family: 'Montserrat', sans-serif;
+                margin-bottom: 4rem;
+                line-height: 1.4rem;
+            }
+
+            ul {
+                width: fit-content;
+                margin: auto;
+                font-size: 1rem;
+                text-align: center;
+                font-weight: 400;
+                font-family: 'Montserrat', sans-serif;
+                margin-bottom: 4rem;
+                line-height: 1.4rem;
+            }
+
+            a {
+                text-decoration: none;
+                transition: all 0.2s ease-in-out;
+            }
+
+            a:hover {
+                color: #BB2525;
+                transform: scale(1.1);
+            }
+
+            .divider {
+                margin: auto;
+                width: 40%;
+                background-color: #141E46;
+                height: 0.15rem;
+            }
+
+            .about-container {
+                display: flex;
+                flex-direction: row;
+                width: 60%;
+                height: fit-content;
+                justify-content: center;
+            }
+
+            .desc-container {
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 60%;
+                margin-left: 2rem;
+                justify-content: center;
+            }
+
+            .card-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 60%;
+                margin-left: 2rem;
+                justify-content: space-around;
+            }
+
+            .card {
+                width: 15rem;
+                min-height: 10rem;
+                height: fit-content;
+                background-color: #141E46;
+                color: #ffffff;
+                border-radius: 2rem;
+                padding: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0.5rem;
+            }
+
+            @media screen and (max-width: 768px) {
+                .about-container {
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Hi, I'm Nuna !</h1>
+        <h2>I am a student of Sepuluh Nopember Institute of Technology</h2>
+        <div class="divider"></div>
+        <section>
+            <h3>About</h3>
+            <div class="about-container">
+                <img style="width: 10rem; height: 10rem; object-fit: cover; border-radius: 10rem; border: 5px solid #FF6969;" src="https://i.postimg.cc/brFGzBDJ/selfportrait.jpg"/>
+                <div class="desc-container">
+                    <h3 style="font-size: 1.5rem; color: #141E46;">Hanun Shaka Puspa</h3>
+                    <p style="text-align: left;">
+                        My nickname is Nuna and I'm a programmer who is eager to learn
+                        some field of expertise of informatics. I'm an adminnistrator of
+                        Intelligent Information System Laboratory and manager of programming
+                        division in Ichiro ITS.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section>
+            <h3>Skillset</h3>
+            <div class="desc-container">
+                <ul>
+                    <li>Hardworking and adaptive</li>
+                    <li>Good communication skill</li>
+                    <li>Is able to work in a team</li>
+                </ul>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section>
+            <h3>Toolset</h3>
+            <div class="card-container">
+                <div class="card">
+                    <h4>HTML, CSS / Sass, and Javascript</h4>
+                    <p>Is able to write simple web page using HTML, CSS, and Javascript</p>
+                </div>
+                <div class="card">
+                    <h4>ReactJs & ExpressJs</h4>
+                    <p>
+                        Is able to create simple web app using ReactJs and ExpressJs framework along with
+                        various libraries such as Material UI, Redux, and many more.
+                    </p>
+                </div>
+                <div class="card">
+                    <h4>Vercel & Digital Ocean</h4>
+                    <p>
+                        Is able to deploy web app using UI based or console based deployments.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section>
+            <h3>My Works</h3>
+            <div class="desc-container">
+                <h4 style="color: #141E46; margin: auto;">TC Merch Website</h4>
+                <p>
+                    A prototype web app built using ReactJs for HMTC Medfo internship.
+                    The website is deployed on Vercel and accessible through
+                    <a href="https://tcmerch.vercel.app/">this link.</a>
+                </p>
+                <h4 style="color: #141E46; margin: auto;">Melocal Web App</h4>
+                <p>
+                    A prototype web app built using ReactJs for PKM 2023. In the
+                    future, this web app will be connected by ExpressJs backend
+                    and mySQL database hosted on digital ocean.
+                    The website is currently deployed on Vercel and accessible through
+                    <a href="https://melocal-fe.vercel.app/">this link.</a>
+                </p>
+                <h4 style="color: #141E46; margin: auto;">Basic Media Schooling Web</h4>
+                <p>
+                    A static web app built using HTML and CSS for Basic Media Schooling 2022.
+                    The website is currently deployed on github pages and accessible through
+                    <a href="https://borednuna.github.io/KPP-BMS22-WEB-1/">this link.</a>
+                </p>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section>
+            <h3>Contact</h3>
+            <p>Furthermore, I can be found via :</p>
+            <div class="about-container">
+                <a href="https://github.com/borednuna">
+                    <div style="display: flex; flex-direction: column; align-items: center; margin: 1rem;">
+                        <img style="width: 4rem;height: 4rem;" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/>
+                        <h2>Github</h2>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/hanunshaka/">
+                    <div style="display: flex; flex-direction: column; align-items: center; margin: 1rem;">
+                        <img style="width: 4rem;height: 4rem;" src="https://businessyield.com/wp-content/uploads/2022/10/LinkedIn-Logo-512x500.png"/>
+                        <h2>LinkedIn</h2>
+                    </div>
+                </a>
+                <a href="mailto:hanunshaka02@gmail.com">
+                    <div style="display: flex; flex-direction: column; align-items: center; margin: 1rem;">
+                        <img style="width: 4rem;height: 4rem;" src="https://e7.pngegg.com/pngimages/881/200/png-clipart-mailing-envelope-logo-email-marketing-computer-icons-email-miscellaneous-web-design.png"/>
+                        <h2>Email</h2>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <h1 style="margin-bottom: 3rem; margin-top: 0;">Thank you !</h1>
+    </body>
+</html>
