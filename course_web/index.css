@@ -1,0 +1,219 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    top: 0;
+    width: 80%;
+    height: 5rem;
+    font-family: 'Roboto', sans-serif;
+    z-index: 1;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    color: #ffffff;
+}
+
+.navbar li {
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar li:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.navbar img {
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.header-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    text-align: center;
+}
+
+.header h1 {
+    color: #ffffff;
+    font-size: 4.5rem;
+}
+
+.card-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -10rem;
+}
+
+.benefit-card {
+    background-color: #ffffff;
+    height: 15rem;
+    width: 15rem;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 0.3s ease-in-out;
+    margin: 1rem;
+}
+
+.benefit-card:hover {
+    background-color: #007BFF;
+    color: #ffffff;
+}
+
+.benefit-card img {
+    width: 4rem;
+    height: 4rem;
+    background-color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.watch-course-title {
+    width: 100%;
+    height: fit-content;
+    margin: 2rem;
+    text-align: left;
+}
+
+.watch-course-title h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.watch-course-title h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #808080;
+}
+
+.course-card {
+    width: 20rem;
+    height: 25rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+}
+
+.course-card img {
+    width: 20rem;
+    height: 11rem;
+    object-fit: cover;
+}
+
+.course-card p {
+    position: absolute;
+    margin: 1rem;
+    padding:0.7rem;
+    background-color: #007BFF;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+}
+
+.course-card h2 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.course-card h3 {
+    margin-top: 0.8rem;
+    color: #808080;
+}
+
+.courses {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer {
+    width: 100%;
+    height: 5rem;
+    background-color: #007BFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    margin-top: 2rem;
+}
