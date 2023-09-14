@@ -70,6 +70,18 @@ button {
     border-radius: 0 0 1rem 0;
 }
 
+.header {
+    width: 80%;
+    height: fit-content;
+    background-image: url('https://images.unsplash.com/photo-1624269305548-1527ef905ff6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1884&q=80');
+    background-size: cover;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
 .logo {
     width: 5rem;
     margin: 2rem;
@@ -97,6 +109,35 @@ button {
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+
+.rownavbar {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.rownavbar ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    list-style-type: none;
+}
+
+.rownavbar li {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+
+    &:hover {
+        background-color: #C6369D;
+        color: #ffffff;
+        font-weight: 700;
+    }
 }
 
 .topbar {
