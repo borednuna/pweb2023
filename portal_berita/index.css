@@ -1,0 +1,135 @@
+body {
+    position: absolute;
+    width: 80vw;
+    height: fit-content;
+    top: 0;
+    margin-top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #004225;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #FFB000;
+}
+
+.header {
+    position: relative;
+    width: 80vw;
+    height: 100%;
+    background-color: #004225;
+    color: #F5F5DC;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    height: 100%;
+    margin: 1rem;
+}
+
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFCF9D;
+    width: 100%;
+    height: 2rem;
+    border: #004225 3px solid;
+}
+
+.main-page {
+    position: relative;
+    width: 80vw;
+    height: 100%;
+    background-color: #F5F5DC;
+    color: #004225;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+    margin-bottom: 1rem;
+}
+
+.left-side {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    color: #004225;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.right-side {
+    position: relative;
+    margin-top: 0;
+    width: 30%;
+    height: 100%;
+    color: #004225;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5DC;
+    color: #004225;
+    border: #004225 2px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.footer {
+    position: relative;
+    width: 80vw;
+    height: 100%;
+    background-color: #004225;
+    color: #F5F5DC;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
