@@ -58,16 +58,35 @@ button {
     }
 }
 
+.mainbar {
+    width: 100%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainpage {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .sidebar {
     position: relative;
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    width: 23%;
+    width: 20%;
     height: 100%;
     align-items: center;
-    border-radius: 0 0 1rem 0;
+    border-radius: 1rem;
+}
+
+.right {
+    width: 70%;
 }
 
 .header {
@@ -101,14 +120,6 @@ button {
 .navbutton:hover {
     background-color: #ebf3ff;
     font-weight: 700;
-}
-
-.mainbar {
-    width: 77%;
-    position: relative;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
 }
 
 .rownavbar {
@@ -202,4 +213,5 @@ button {
     padding: 1rem;
     background-color: gray;
     border-radius: 1rem 1rem 0 0;
+    margin-top: 2rem;
 }
