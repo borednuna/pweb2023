@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./index.css"/>
+        <title>Nuna | Wedding Invitation</title>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a href="#home"><img src="./assets/misc/home (1).png"/></a>
+            <a href="#couple"><img style="width: 3rem; height: 3rem;" src="./assets/misc/couple.png"/></a>
+            <a href="#calendar"><img src="./assets/misc/calendar.png"/></a>
+            <a href="#script"><img src="./assets/misc/script.png"/></a>
+            <a href="#image-gallery"><img src="./assets/misc/image-gallery.png"/></a>
+            <a href="#guests-book"><img src="./assets/misc/guests-book.png"/></a>
+        </div>
+
+        <section id="home">
+            <h2>Save the Date !</h2>
+            <h1>Tyler<br/>&<br/>Wednesday</h1>
+            <h2>Sunday, 24th of September 2023</h2>
+        </section>
+
+        <section id="couple">
+            <h1>We're getting married !</h1>
+            <div class="couple-container">
+                <div class="couple-image">
+                    <img src="./assets/gallery/Jenna Ortega _ Wednesday.jpeg"/>
+                    <h2 style="font-size: 3rem;">Wednesday Addams</h2>
+                    <h2>Daughter of Gomez and Morticia Addams</h2>
+                </div>
+                <div class="couple-image">
+                    <img src="./assets/gallery/_ (2).jpeg"/>
+                    <h2 style="font-size: 3rem;">Tyler Galpin</h2>
+                    <h2>Son of Donovan and Hyde Galpin</h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="calendar">
+            <div class="divider"><h1>Save the Date !</h1></div>
+            <div class="container">
+                <div class="schedules">
+                    <h2>Wedding Ceremony</h2>
+                    <h3>Friday, 22th of September 2023</h3>
+                    <h3>09:00 AM</h3>
+                    <h3>Manarul Ilmi Mosque ITS</h3>
+                    <h3>Kampus ITS, Jalan Raya ITS Campus, Sukolilo, Keputih, Kec. Sukolilo, Surabaya, Jawa Timur 60111</h3>
+                    <a href="https://maps.app.goo.gl/ApuFYBhfAjr8zDHK6"><button>Show location</button></a>
+                </div>
+                <div class="schedules">
+                    <h2>Wedding Reception</h2>
+                    <h3>Sunday, 24th of September 2023</h3>
+                    <h3>10:00 PM</h3>
+                    <h3>Bonnet Hotel Surabaya</h3>
+                    <h3>Jl. Manyar Kertoarjo V No.62, Mojo, Kec. Gubeng, Surabaya, Jawa Timur 60256</h3>
+                    <a href="https://maps.app.goo.gl/tQzSboiXvKUhMj8Z7"><button>Show location</button></a>
+            </div>
+        </section>
+
+        <section id="script">
+            <h1>Our Story</h1>
+            <ul class="timeline-both-side">
+                <li>
+                    <div class="border-line"></div>
+                    <div class="timeline-description">
+                        <img src="./assets/gallery/gallery1.jpg"/>
+                        <h2>First Interaction</h2>
+                        <h3>Tyler and Wednesday met for the first time at a cafe in weathervane where tyler works as a barista. Wednesday needed his help to locate an address</h3>
+                    </div>
+                </li>
+                <li class="opposite-side">
+                    <div class="border-line"></div>
+                    <div class="timeline-description">
+                        <img src="./assets/gallery/galler5.jpg"/>
+                        <h2>First Date</h2>
+                        <h3>Tyler and Wednesday went to prom night as a couple and danced together on the dance floor</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="border-line"></div>
+                    <div class="timeline-description">
+                        <img src="./assets/gallery/gallery4.jpg"/>
+                        <h2>Marriage Proposal</h2>
+                        <h3>After going on adventures toghether, tyler finally asked Wednesday to be his partner for life</h3>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="image-gallery">
+            <h1>Gallery</h1>
+            <div class="container">
+                <ul class='list'>
+                    <li class='item-left'></li>
+                    <li class='item-left'></li>
+                    <li class='item-left'></li>
+                </ul>
+                <ul class='list'>
+                    <li class='item-right'></li>
+                    <li class='item-right'></li>
+                    <li class='item-right'></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="rsvp">
+            <h1>RSVP</h1>
+            <form class="form">
+                <label for="name">Full name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Please enter your name">
+                <label for="kehadiran">Would like to come to the wedding ?</label>
+                <div style="display: flex; flex-direction: row; justify-content: space-around; margin: 1rem;">
+                    <label>
+                        <input type="radio" name="gender" value="male">
+                        Ya
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        Tidak
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="gender" value="other">
+                        Other
+                    </label>
+                </div>
+                <label for="name">Number of guest who'd attend</label>
+                <input type="text" id="username" name="username" placeholder="2">
+                <label for="name">Messages for the bride</label>
+                <input type="text" id="fullname" name="message" placeholder="Type your message here">
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
