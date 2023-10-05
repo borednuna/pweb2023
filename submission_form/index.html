@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nuna | Submission Form</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script>
+            function validateForm() {
+                var requiredFields = document.querySelectorAll('[required]');
+                console.log("Form submitted");
+                for (var i = 0; i < requiredFields.length; i++) {
+                    if (requiredFields[i].value === '') {
+                        console.log("Field is empty");
+                        alert('Please fill in all required fields.');
+                        return false;
+                    }
+
+                    if (requiredFields[i].id === 'nrp') {
+                        if (isNaN(requiredFields[i].value)) {
+                            console.log("NRP is not a number");
+                            alert('NRP must be a number.');
+                            return false;
+                        }
+                    }
+
+                    if (requiredFields[i].id === 'angkatan') {
+                        if (requiredFields[i].value === 'blank') {
+                            console.log("Angkatan is not selected");
+                            alert('Please select your angkatan.');
+                            return false;
+                        }
+                    }
+
+                    if (requiredFields[i].id === 'dosen') {
+                        if (requiredFields[i].value === 'blank') {
+                            console.log("Dosen is not selected");
+                            alert('Please select your dosen wali.');
+                            return false;
+                        }
+                    }
+                }
+                return true;
+            }
+
+            function test() {
+                console.log("Test");
+            }
+        </script>        
+    </head>
+
+    <body>
+        <div>
+            <img style="width: 6rem; margin: 1rem;" src="https://www.its.ac.id/informatika/wp-content/themes/DepartmentITS/assets/img/logo.png"/>
+            <img style="width: 8rem; margin: 1rem;" src="https://my.its.ac.id/assets/media/img/myits-sso-white.png"/>
+        </div>
+        <form onsubmit="return validateForm()">
+            <h1>Registrasi FRS</h1>
+            <h2>Departemen Teknik Informatika</h2>
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" required>
+
+            <label for="nrp">NRP</label>
+            <input type="text" id="nrp" name="nrp" placeholder="NRP" required>
+
+            <label for="angkatan">Angkatan</label>
+            <select id="angkatan" name="angkatan" required>
+                <option value="blank">Pilih angkatan</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select>
+
+            <label for="matkul">Mata Kuliah</label>
+            <input type="text" id="matkul" name="matkul" placeholder="Mata Kuliah" required>
+
+            <label for="dosen">Dosen Wali</label>
+            <select id="dosen" name="dosen" required>
+                <option value="blank">Pilih dosen wali</option>
+                <option value="TA">Prof. Tohari Ahmad, S.Kom., M.IT., Ph.D.</option>
+                <option value="AM">Ary Mazharuddin Shiddiqi, S.Kom., M.Comp.Sc., Ph.D</option>
+                <option value="DA">Dini Adni Navastara, S.Kom., M.Sc.</option>
+                <option value="RA">Dr. Radityo Anggoro, S.Kom., M.Sc.</option>
+                <option value="YP">Dr. Yudhi Purwananto, S.Kom., M.Kom.</option>
+            </select>
+
+            <input type="submit" value="Submit" onclick="validateForm()">
+        </form>
+        <p style="color: #fff; font-size: 0.8rem;">© 2023 Bukan Institut Teknologi Sepuluh Nopember. v2.6.5</p>
+    </body>
+</html>
