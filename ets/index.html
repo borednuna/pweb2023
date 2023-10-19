@@ -9,178 +9,236 @@
     </head>
 
     <body>
-        <div class="mainbar">
-            <section class="header">
-                <h1 style="color: #000000; font-size: 4rem; margin-bottom: 0.5rem;">FAKE NEWS</h1>
-                <p style="color: #000000; font-size: 1.5rem; margin-bottom: 2rem; font-weight: 400;">Portal Berita Tidak Terpercaya</p>
-            </section>
-            <section class="topbar">
-                <p>Hi, <b>Nuna</b>. Welcome to <b>Fake News</b></p>
-                <input class="searchbar" type="text" placeholder="Search..">
-            </section>
-            <section class="rownavbar">
-                <ul>
-                    <li>Home</li>
-                    <li>News</li>
-                    <li>Opinion</li>
-                    <li>Video</li>
-                    <li>Podcast</li>
-                    <li>Photo</li>
-                    <li>More</li>
-                </ul>
-            </section>
-            <div class="mainpage">
-                <div class="sidebar">
-                    <img class="logo" src="./fake-news.png">
-                    <div class="navbutton">Kategori</div>
-                    <ul>
-                        <li>Sport</li>
-                        <li>Politics</li>
-                        <li>Technology</li>
-                        <li>Entertainment</li>
-                        <li>Health</li>
-                        <li>Education</li>
-                        <li>Business</li>
-                        <li>Economy</li>
-                    </ul>
+        <section id="header">
+            <div id="date"></div>
+            <div id="breakingnews">BREAKING NEWS | Viral Video Tunjukkan Roket dari Gaza Meledak saat RS Al Ahli Diserang</div>
+            <div id="time"></div>
+            <script>
+                var today = new Date();
+                var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var formattedDate = today.toLocaleDateString('en-US', options);
+                document.getElementById('date').textContent = formattedDate;
+
+                var time = new Date();
+                var options = { hour: 'numeric', minute: 'numeric', second: 'numeric' };
+                var formattedTime = time.toLocaleDateString('en-US', options);
+                document.getElementById('time').textContent = formattedTime;
+            </script>
+        </section>
+        <section id="newsheader">
+            <h1>FakeNews</h1>
+            <div class="banner">
+                <div class="cover">
+                    <h2>Pasang Iklan Mudah</h2>
+                    <p>Hanya Rp10.000,- per hari</p>
                 </div>
-                <div class="right">
-                    <section>
-                        <img class="banner" src="./Banner 1 1.png"/>
-                    </section>
-                    <h1>BERITA TERBARU</h1>
-                    <section class="mainnews">
-                        <div class="newscard">
-                            <img style="width: 15rem; height: 15rem; object-fit: cover; border-radius: 0.5rem; margin-right: 1rem;" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"/>
-                            <div class="sidetext">
-                                <p style="color: #808080;">Games</p>
-                                <h3 style="margin: 0; cursor: pointer;">5 Rekomendasi Games Terbaik di Bulan Agustus</h3>
-                                <p style="color: #808080; margin: 0; ">by Admin</p>
-                                <div style="width: 80%; height: 1px; background-color: #808080; margin: auto;"></div>
-                                <h3 style="margin: 0; cursor: pointer;">5 Rekomendasi Games Terbaik di Bulan Agustus</h3>
-                                <p style="color: #808080; margin: 0;">by Admin</p>
-                                <div style="width: 80%; height: 1px; background-color: #808080; margin: auto;"></div>
-                                <h3 style="margin: 0; cursor: pointer;">5 Rekomendasi Games Terbaik di Bulan Agustus</h3>
-                                <p style="color: #808080; margin: 0;">by Admin</p>
-                            </div>
-                        </div>
-                        <div class="newscard">
-                            <div class="sidetext">
-                                <h2>Berlangganan Premium</h2>
-                                <p style="color: red; text-decoration:line-through;">50.000 IDR</p>
-                                <h2>25.000 IDR <span style="font-weight: 400; color: #808080; font-size: 1rem;">/month</span> </h2>
-                                <ul style="margin: auto; width: 80%;">
-                                    <li style="margin: 0;">Bebas iklan</li>
-                                    <li style="margin: 0;">Akses konten premium</li>
-                                    <li style="margin: 0;">Tampilan custom</li>
-                                </ul>
-                                <button>Langganan sekarang</button>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="allnews">
-                        <div class="newscard">
-                            <img style="width: 8rem; height: 8em; object-fit: cover; border-radius: 0.5rem; margin-right: 1rem;" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"/>
-                            <div class="sidetext">
-                                <p style="color: #808080;">Technology</p>
-                                <h2 styl>Penyisihan Schematics NPC Secara Online</h2>
-                                <p>Authored by Hanun Shaka</p>
-                                <p>12/12/2021</p>
-                                <h3 style="text-decoration: underline; cursor: pointer;">Baca selengkapnya</h3>
-                            </div>
-                        </div>
-                        <div class="newscard">
-                            <img style="width: 8rem; height: 8em; object-fit: cover; border-radius: 0.5rem; margin-right: 1rem;" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"/>
-                            <div class="sidetext">
-                                <p style="color: #808080;">Technology</p>
-                                <h2 styl>Penyisihan Schematics NPC Secara Online</h2>
-                                <p>Authored by Hanun Shaka</p>
-                                <p>12/12/2021</p>
-                                <h3 style="text-decoration: underline; cursor: pointer;">Baca selengkapnya</h3>
-                            </div>
-                        </div>
-                        <div class="newscard">
-                            <img style="width: 8rem; height: 8em; object-fit: cover; border-radius: 0.5rem; margin-right: 1rem;" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"/>
-                            <div class="sidetext">
-                                <p style="color: #808080;">Technology</p>
-                                <h2 styl>Penyisihan Schematics NPC Secara Online</h2>
-                                <p>Authored by Hanun Shaka</p>
-                                <p>12/12/2021</p>
-                                <h3 style="text-decoration: underline; cursor: pointer;">Baca selengkapnya</h3>
-                            </div>
-                        </div>
-                        <div class="newscard">
-                            <img style="width: 8rem; height: 8em; object-fit: cover; border-radius: 0.5rem; margin-right: 1rem;" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"/>
-                            <div class="sidetext">
-                                <p style="color: #808080;">Technology</p>
-                                <h2 styl>Penyisihan Schematics NPC Secara Online</h2>
-                                <p>Authored by Hanun Shaka</p>
-                                <p>12/12/2021</p>
-                                <h3 style="text-decoration: underline; cursor: pointer;">Baca selengkapnya</h3>
-                            </div>
-                        </div>
-                    </section>
-                    <h1>LOWONGAN PEKERJAAN</h1>
-                    <section class="lowongan">
-                        <div class="lowongancard">
-                            <img style="width: 15rem; height: 8em; object-fit: cover; border-radius: 0.5rem; margin-right: 1rem;" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"/>
-                            <div>
-                                <p style="color: #808080;">Surabaya, Jawa Timur</p>
-                                <h2>Customer Service Export and Import</h2>
-                                <p>PT GLORIA MITRA PERSADA</p>
-                                <p>12/12/2021</p>
-                            </div>
-                            <h3 style="text-decoration: underline; cursor: pointer; margin: auto; background-color:rgb(255, 0, 183); padding: 1rem; color: #ffffff; border-radius: 1rem; font-size: 1rem;">Baca selengkapnya</h3>
-                        </div>
-                        <div class="lowongancard">
-                            <img style="width: 15rem; height: 8em; object-fit: cover; border-radius: 0.5rem; margin-right: 1rem;" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"/>
-                            <div>
-                                <p style="color: #808080;">Surabaya, Jawa Timur</p>
-                                <h2>Personal Assistant Commisioner</h2>
-                                <p>PT. MyFood Indonesia</p>
-                                <p>12/12/2021</p>
-                            </div>
-                            <h3 style="text-decoration: underline; cursor: pointer; margin: auto; background-color:rgb(255, 0, 183); padding: 1rem; color: #ffffff; border-radius: 1rem; font-size: 1rem;">Baca selengkapnya</h3>
-                        </div>
-                        <div class="lowongancard">
-                            <img style="width: 15rem; height: 8em; object-fit: cover; border-radius: 0.5rem; margin-right: 1rem;" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"/>
-                            <div style="width: 40%;">
-                                <p style="color: #808080;">Surabaya, Jawa Timur</p>
-                                <h2>Marketing Logistik</h2>
-                                <p>PT Lestari Jaya Raya</p>
-                                <p>12/12/2021</p>
-                            </div>
-                            <h3 style="text-decoration: underline; cursor: pointer; margin: auto; background-color:rgb(255, 0, 183); padding: 1rem; color: #ffffff; border-radius: 1rem; font-size: 1rem;">Baca selengkapnya</h3>
-                        </div>
-                    </section>
-                    <section class="opini">
-                        <form onsubmit="return validateForm()">
-                            <h1>Form Opini Publik</h1>
-                            <label for="nama">Nama Lengkap</label>
-                            <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" required>
-                
-                            <label for="topik">Topik</label>
-                            <select id="topik" name="topik" required>
-                                <option value="blank">Pilih topik</option>
-                                <option value="Olahraga">Olahraga</option>
-                                <option value="Politik">Politik</option>
-                                <option value="Ekonomi">Ekonomi</option>
-                                <option value="Kesehatan">Kesehatan</option>
-                                <option value="Pendidikan">Pendidikan</option>
-                            </select>
-                
-                            <label for="opini">Opini</label>
-                            <input type="text" id="opini" name="opini" placeholder="Opini" required>
-                
-                            <input type="submit" value="Submit" onclick="validateForm()">
-                        </form>
-                    </section>
+                <img class="ads" src="https://images.unsplash.com/photo-1547452912-b43d586aed93?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+            </div>
+        </section>
+        <section id="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">International</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Opinion</a></li>
+                <li><a href="#">Bussiness</a></li>
+                <li><a href="#">Youth</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Lifestyle</a></li>
+            </ul>
+        </section>
+        <section id="mainnews">
+            <div class="bignews">
+                <p>International</p>
+                <div class="title">
+                    <h2>Author | 20 Oktober 2023</h2>
+                    <h1>Viral Video Tunjukkan Roket dari Gaza Meledak saat RS Al Ahli Diserang</h1>
+                </div>
+                <div class="overlap"></div>
+                <img src="https://akcdn.detik.net.id/visual/2023/10/19/rumah-sakit-al-ahli-pasca-gempuran-israel-5_169.jpeg?w=650&q=90"/>
+            </div>
+            <div class="sidenews">
+                <div class="sidenews_">
+                    <p>Politik</p>
+                    <div class="title">
+                        <h2>Author | 20 Oktober 2023</h2>
+                        <h1>Sinyal Kuat Jokowi Vis-a-vis Megawati di Pilpres 2024</h1>
+                    </div>
+                    <div class="overlap"></div>
+                    <img src="https://akcdn.detik.net.id/visual/2015/10/24/172cffa2-06cf-463c-b22b-e12a034bdbaf_169.jpg?w=650&q=90"/>
+                </div>
+                <div class="sidenews_">
+                    <p>Olahraga</p>
+                    <div class="title">
+                        <h2>Author | 20 Oktober 2023</h2>
+                        <h1>STY Diminta Atur Uji Coba Timnas Indonesia Sebelum Ladeni Irak</h1>
+                    </div>
+                    <div class="overlap"></div>
+                    <img src="https://akcdn.detik.net.id/visual/2023/08/18/piala-aff-u-23-2023-1_169.jpeg?w=650&q=90"/>
                 </div>
             </div>
+        </section>
+        <section id="terbaru">
+            <h1>Terbaru</h1>
+            <div class="line"></div>
+            <div class="container">
+                <div class="card">
+                    <div class="cover">
+                        <p>Politik</p>
+                        <img src="https://akcdn.detik.net.id/visual/2023/09/21/deklarasi-partai-demokrat-untuk-prabowo-subianto-sebagai-capres-koalisi-indonesia-maju_169.png?w=650&q=90"/>
+                    </div>
+                    <div class="title">
+                        <h2>Author | 20 Oktober 2023</h2>
+                        <h1>Prabowo: Saya Tidak Akan Pernah Meninggalkan Demokrat</h1>
+                        <p>
+                            Partai Demokrat menyatakan tidak akan keluar dari Koalisi
+                            Indonesia Maju (KIM) terlepas siapapun nantinya cawapres yang
+                            akan dipilih oleh Prabowo Subianto di kontestasi politik Pilpres 2024.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cover">
+                        <p>Politik</p>
+                        <img src="https://akcdn.detik.net.id/visual/2019/06/30/5fa6bf8d-08f6-4c97-b62d-96012b32ea1f_169.jpeg?w=650&q=90"/>
+                    </div>
+                    <div class="title">
+                        <h2>Author | 20 Oktober 2023</h2>
+                        <h1>Beda Sikap Erdogan, Anwar Ibrahim, dan Jokowi soal RS di Gaza Dibom</h1>
+                        <p>
+                            Partai Demokrat menyatakan tidak akan keluar dari Koalisi
+                            Indonesia Maju (KIM) terlepas siapapun nantinya cawapres yang
+                            akan dipilih oleh Prabowo Subianto di kontestasi politik Pilpres 2024.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cover">
+                        <p>Hiburan</p>
+                        <img src="https://akcdn.detik.net.id/visual/2023/10/19/mama-awards-2023_169.png?w=650&q=90"/>
+                    </div>
+                    <div class="title">
+                        <h2>Author | 20 Oktober 2023</h2>
+                        <h1>Daftar Lengkap Nominasi MAMA 2023</h1>
+                        <p>
+                            Partai Demokrat menyatakan tidak akan keluar dari Koalisi
+                            Indonesia Maju (KIM) terlepas siapapun nantinya cawapres yang
+                            akan dipilih oleh Prabowo Subianto di kontestasi politik Pilpres 2024.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button>Selengkapnya</button>
+        </section>
+        <section id="terbaru">
+            <h1>Event</h1>
+            <div class="line"></div>
+            <div class="container">
+                <div class="card">
+                    <div class="cover">
+                        <img src="https://eventsurabaya.net/wp-content/uploads/2023/10/PP-ES-Sidoarjo-Food-Festival-Part-2-Copy.jpg"/>
+                    </div>
+                    <div class="title">
+                        <h1 style="margin-top: 1rem;">SIDOARJO FOOD FESTIVAL PART 2</h1>
+                        <p>Halaman Parkir Suncity Sidoarjo | 27 Oktober - 5 November 2023</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cover">
+                        <img src="https://jadwalevent.web.id/wp-content/uploads/2023/07/Job-fair-Surabaya.jpg"/>
+                    </div>
+                    <div class="title">
+                        <h1 style="margin-top: 1rem;">Indonesia Career Expo Surabaya</h1>
+                        <p>Dyandra Convention Hall | 26-27 Juli 2023</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cover">
+                        <img src="https://jadwalevent.web.id/wp-content/uploads/2023/07/Pameran-Surabaya.jpg"/>
+                    </div>
+                    <div class="title">
+                        <h1 style="margin-top: 1rem;">Surabaya Printing Expo 2023</h1>
+                        <p>Grand City Surabaya | 20-23 Juli 2023</p>
+                    </div>
+                </div>
+            </div>
+            <button>Selengkapnya</button>
+        </section>
+        <section id="lowonganiklanopini">
+            <div class="left">
+                <div class="lowongan">
+                    <h1>Lowongan Kerja</h1>
+                    <div class="line"></div>
+                    <div class="container" style="position: relative; display: flex; flex-direction: row; flex-wrap: wrap;">
+                        <div class="card">
+                            <img src="https://image-service-cdn.seek.com.au/70b9fc396a84c694fc9d250f9e254a030fc9f9a6/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"/>
+                            <div class="text">
+                                <p>Surabaya</p>
+                                <h1>Personal Assistant Commisioner</h1>
+                                <p>PT. MyFood Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://image-service-cdn.seek.com.au/8d8974676b6c49e2ea3e83a55efb8920bdd75525/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"/>
+                            <div class="text">
+                                <p>Surabaya</p>
+                                <h1>Sales Leader</h1>
+                                <p>PT Pratama Graha Semesta</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://image-service-cdn.seek.com.au/0652efd055f36d8e60bf80af55e8fc4a60ec4d88/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"/>
+                            <div class="text">
+                                <p>Surabaya</p>
+                                <h1>Regional Sales Manager (FMCG Food & Beverage)</h1>
+                                <p>PT Tancorp Abadi Nusantara</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://image-service-cdn.seek.com.au/c7f1416bf4e6c4a6f5b9921c82fd3b50b2b488e5/ee4dce1061f3f616224767ad58cb2fc751b8d2dc"/>
+                            <div class="text">
+                                <p>Surabaya</p>
+                                <h1>Sales Representative</h1>
+                                <p>PT. Prima Bersama Berkat</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button>Selengkapnya</button>
+                </div>
+                <div class="opini">
+                    <h1>Opini</h1>
+                    <div class="line"></div>
+                    <form onsubmit="return validateForm()">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" name="nama" placeholder="Nama" required>
 
-            <footer>
-                <p>&copy; 2023 Nuna | Portal Berita. All rights reserved.</p>
-            </footer>
-        </div>
+                        <label for="topik">Topik</label>
+                        <select id="topik" name="topik" required>
+                            <option value="blank">Pilih angkatan</option>
+                            <option value="politik">Politik</option>
+                            <option value="olahraga">Olahraga</option>
+                            <option value="ekonomi">Ekonomi</option>
+                            <option value="hiburan">Hiburan</option>
+                            <option value="internasional">Internasional</option>
+                        </select>
+
+                        <label for="matkul">Mata Kuliah</label>
+                        <input type="text" id="matkul" name="matkul" placeholder="Mata Kuliah" required>
+
+                        <input type="submit" value="Submit" onclick="validateForm()">
+                    </form>
+                </div>
+            </div>
+            <div class="iklan">
+                <h1>Iklan</h1>
+                <div class="line"></div>
+                <img src="https://deprintz.com/image-product/img2082-1646118030.jpg"/>
+                <img src="https://eventsurabaya.net/wp-content/uploads/2021/03/PP-ES-PEMILIHAN-BINTANG-IKLAN-OPEN-CLASS-PUBLIC-SPEAKING-2021-VIANNEY-NANA-1-Copy-500-x-626.jpg"/>
+            </div>
+        </section>
+
+        <footer>
+            <h1>FakeNews</h1>
+        </footer>
     </body>
 </html>
