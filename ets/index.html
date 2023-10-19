@@ -48,6 +48,7 @@
                     <section>
                         <img class="banner" src="./Banner 1 1.png"/>
                     </section>
+                    <h1>BERITA TERBARU</h1>
                     <section class="mainnews">
                         <div class="newscard">
                             <img style="width: 15rem; height: 15rem; object-fit: cover; border-radius: 0.5rem; margin-right: 1rem;" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"/>
@@ -118,6 +119,61 @@
                                 <h3 style="text-decoration: underline; cursor: pointer;">Baca selengkapnya</h3>
                             </div>
                         </div>
+                    </section>
+                    <h1>LOWONGAN PEKERJAAN</h1>
+                    <section class="lowongan">
+                        <div class="lowongancard">
+                            <img style="width: 15rem; height: 8em; object-fit: cover; border-radius: 0.5rem; margin-right: 1rem;" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"/>
+                            <div>
+                                <p style="color: #808080;">Surabaya, Jawa Timur</p>
+                                <h2>Customer Service Export and Import</h2>
+                                <p>PT GLORIA MITRA PERSADA</p>
+                                <p>12/12/2021</p>
+                            </div>
+                            <h3 style="text-decoration: underline; cursor: pointer; margin: auto; background-color:rgb(255, 0, 183); padding: 1rem; color: #ffffff; border-radius: 1rem; font-size: 1rem;">Baca selengkapnya</h3>
+                        </div>
+                        <div class="lowongancard">
+                            <img style="width: 15rem; height: 8em; object-fit: cover; border-radius: 0.5rem; margin-right: 1rem;" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"/>
+                            <div>
+                                <p style="color: #808080;">Surabaya, Jawa Timur</p>
+                                <h2>Personal Assistant Commisioner</h2>
+                                <p>PT. MyFood Indonesia</p>
+                                <p>12/12/2021</p>
+                            </div>
+                            <h3 style="text-decoration: underline; cursor: pointer; margin: auto; background-color:rgb(255, 0, 183); padding: 1rem; color: #ffffff; border-radius: 1rem; font-size: 1rem;">Baca selengkapnya</h3>
+                        </div>
+                        <div class="lowongancard">
+                            <img style="width: 15rem; height: 8em; object-fit: cover; border-radius: 0.5rem; margin-right: 1rem;" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"/>
+                            <div style="width: 40%;">
+                                <p style="color: #808080;">Surabaya, Jawa Timur</p>
+                                <h2>Marketing Logistik</h2>
+                                <p>PT Lestari Jaya Raya</p>
+                                <p>12/12/2021</p>
+                            </div>
+                            <h3 style="text-decoration: underline; cursor: pointer; margin: auto; background-color:rgb(255, 0, 183); padding: 1rem; color: #ffffff; border-radius: 1rem; font-size: 1rem;">Baca selengkapnya</h3>
+                        </div>
+                    </section>
+                    <section class="opini">
+                        <form onsubmit="return validateForm()">
+                            <h1>Form Opini Publik</h1>
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" required>
+                
+                            <label for="topik">Topik</label>
+                            <select id="topik" name="topik" required>
+                                <option value="blank">Pilih topik</option>
+                                <option value="Olahraga">Olahraga</option>
+                                <option value="Politik">Politik</option>
+                                <option value="Ekonomi">Ekonomi</option>
+                                <option value="Kesehatan">Kesehatan</option>
+                                <option value="Pendidikan">Pendidikan</option>
+                            </select>
+                
+                            <label for="opini">Opini</label>
+                            <input type="text" id="opini" name="opini" placeholder="Opini" required>
+                
+                            <input type="submit" value="Submit" onclick="validateForm()">
+                        </form>
                     </section>
                 </div>
             </div>
