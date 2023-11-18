@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Check if a new photo is uploaded
     if (!empty($_FILES["new_foto"]["name"])) {
         // Process the new photo
-        $targetDir = "uploads/"; // Adjust the directory as needed
+        $targetDir = "xampp/htdocs/crud_upload/images/"; // Adjust the directory as needed
         $targetFile = $targetDir . basename($_FILES["new_foto"]["name"]);
 
         // Ensure the target directory exists; create it if not
