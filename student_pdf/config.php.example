@@ -1,0 +1,8 @@
+<!-- Username dan password disesuaikan pada pengaturan di database -->
+<?php
+    $hostname  = "";
+    $username  = "";
+    $password  = "";
+    $dbname  = "";
+    $conn = mysqli_connect($hostname, $username, $password, $dbname);    
+?>
